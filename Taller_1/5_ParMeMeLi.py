@@ -61,6 +61,7 @@ while n != 3:
             mpar = spar / len(lpar)
 
             print(f"¡Lo hicimos! La media par es:(づ ᴗ _ᴗ)づ♡  {mpar} ♡")
+            print("------------------------------------------")
 
 
 
