@@ -59,8 +59,9 @@ while m != 4:
             #gaD: Por la idea de hacer un dataselector de una vez con un for. 
             #La ingeniosa forma de construirlo con el {i} que va variando a medida que va recorriendo el número total de datos.
             #Además de la idea de hacer una lista que escoja el dato seleccionado.
-            
+
             datos += dato
+            #Nota: Aquí para concatenar los datos también se podría  con un dato.append
 
         print("------------------------------------------")
 
@@ -137,9 +138,8 @@ while m != 4:
 
             
             print("------------------------------------------")
-            print(f"gaD: La desviacion estandar poblacional es:(•◡•)/ {desvpob} ")
+            print(f"gaD: La desviacion estandar muestral es:(•◡•)/ {desvpob} ")
             print("------------------------------------------")
-    
 
 
         
