@@ -17,21 +17,22 @@ print("------------------------------------------")
 #El programa tiene que dar una respuesta sino hay ningún dato repetido. 
 
 
-datos = []
+datos = [] #Datos. Lista de selección de datos.
 
-datosf = []
+datosf = [] #Datos filtrados. datosf. Lista de los datos únicos del conjunto de datos.
 
-datosfc = []
+datosfc = [] #Datos contados. datosc. Lista que cuenta cuantas veces se repite dada su posición un dato único que parte de datos filtrados. 
 
-datosm = [] #Lista conformada por los valores que más se repiten del total de datos seleccionados. 
+datosm = [] #Datos maximos. datos m. Lista conformada por los valores que más se repiten del total de datos seleccionados. 
 
 n = int(input("Selecciona la cantidad de datos: "))
 
 for i in range(n):
     datos.append(int(input(f"Escoge el {i}° dato : ")))
 
-print(datos)
-
+print("------------------------------------------")
+print(f"Los datos seleccionados han sido: {datos}")
+print("------------------------------------------")
 
 
 for i in range (n):
@@ -43,8 +44,9 @@ for i in range (n):
     if it not in datosf: 
         datosf.append(it)
 
-print(datosf)
-
+print("------------------------------------------")
+print(f"Los terminos existentes en la lista de datos son los siguientes: {datosf}")
+print("------------------------------------------")
 
 for i in range (len(datosf)):
 
@@ -52,11 +54,16 @@ for i in range (len(datosf)):
 
     datosfc.append(idfc)
 
-print(f"Los datos seleccionados fueron: {datosfc} ")
+print("------------------------------------------")
+
+print(f"Cada dato se repite respectivamente: {datosfc} ")
+
+print("------------------------------------------")
 
 for i in range (len(datosf)):
 
-    if datosfc[i] == max(datosfc) and max(datosfc) > 1 : #Gloria a DIOS se me vino esta idea después de tanto pensarlo sin ia ni nada después de una semana entera sin hablar con nadie sobre este tema.
+    if datosfc[i] == max(datosfc) and max(datosfc) > 1 : #gaD: se me vino esta idea después de tanto pensarlo, Toma la frecuencia de cada dato y luego lo compara con la frecuencia máxima de los datos.
+                                                        #gaD: Y el max(datosfc) > 1 Es para evitar el caso en que la frecuencia de los datos es 1, es decir no se repite ningún dato. 
 
         datosm.append(datosf[i])
 
