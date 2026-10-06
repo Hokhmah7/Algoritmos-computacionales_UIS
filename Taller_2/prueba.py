@@ -8,6 +8,7 @@ import random as rnd
 #Definición de funciones.
 #----------------------------------------------------------
 
+A = np.random.randint(0,100,n)
 
 def bubble_sort(A):
     n = len(A)
